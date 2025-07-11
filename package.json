@@ -7,5 +7,8 @@
     "payment-service",
     "email-service",
     "shared"
-  ]
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces"
+  }
 }
