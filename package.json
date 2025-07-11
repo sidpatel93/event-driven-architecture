@@ -1,0 +1,11 @@
+{
+  "name": "event-driven-architecture",
+  "private": true,
+  "workspaces": [
+    "order-service",
+    "inventory-service",
+    "payment-service",
+    "email-service",
+    "shared"
+  ]
+}
