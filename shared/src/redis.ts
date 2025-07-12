@@ -1,6 +1,6 @@
-import { createClient, RedisClientType } from 'redis';
+import { createClient } from 'redis';
 
-export function createRedisClient(url: string): RedisClientType<any, any> {
+export function createRedisClient(url: string) {
   const client = createClient({ url });
   client.on('error', (err) => console.error('Redis Client Error', err));
   return client;

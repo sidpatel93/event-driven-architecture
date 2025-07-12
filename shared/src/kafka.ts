@@ -1,7 +1,7 @@
 import { Kafka, Producer, Consumer } from 'kafkajs';
 
-export function createKafkaClient(broker: string) {
-  return new Kafka({ brokers: [broker] });
+export function createKafkaClient(broker: string, clientId: string) {
+  return new Kafka({ clientId: clientId, brokers: [broker] });
 }
 
 export function createProducer(kafka: Kafka): Producer {
