@@ -11,3 +11,4 @@ export function createProducer(kafka: Kafka): Producer {
 export function createConsumer(kafka: Kafka, groupId: string): Consumer {
   return kafka.consumer({ groupId });
 }
+
