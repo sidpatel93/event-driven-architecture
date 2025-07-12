@@ -10,5 +10,8 @@
   ],
   "scripts": {
     "build": "npm run build --workspaces"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }
