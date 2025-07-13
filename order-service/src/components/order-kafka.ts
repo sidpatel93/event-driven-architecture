@@ -6,7 +6,7 @@ let orderKafkaClient: Kafka;
 
 export async function initOrderKafka() {
   console.log('Initializing Kafka for Order Service');
-  orderKafkaClient = createKafkaClient('localhost:9092', 'order-service-client');
+  orderKafkaClient = createKafkaClient('localhost:9094', 'order-service-client');
   orderProducer = orderKafkaClient.producer();
   console.log('Connecting to Kafka as order-service-producer');
   await orderProducer.connect();
